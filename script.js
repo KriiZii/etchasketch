@@ -1,4 +1,3 @@
-const mainContainer = document.querySelector(".mainContainer")
 const buttonContainer = document.querySelector(".buttonContainer")
 const container = document.querySelector(".container")
 
