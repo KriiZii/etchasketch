@@ -6,6 +6,10 @@ const button = document.createElement("button")
 buttonContainer.appendChild(button)
 button.textContent = "Change Size"
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max)
+}
+
 function createBoxes(size) {
     for (let i = 1; i <= (size*size); i++) {
         const box = document.createElement("div")
@@ -20,7 +24,7 @@ function createBoxes(size) {
 createBoxes(16)
 
 container.addEventListener("mouseover", (event) => {
-    event.target.style.backgroundColor = "orange"
+    event.target.style.backgroundColor = `rgb(${getRandomInt(256)}, ${getRandomInt(256)}, ${getRandomInt(256)})`
 })
 
 function setGridSize() {
